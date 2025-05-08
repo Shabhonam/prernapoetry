@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -25,32 +24,47 @@
 
     <style>
         body {
-            background-color: #f9f3e8;
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 20px;
             margin: 0;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: linear-gradient(to bottom, #f9f3e8, #e1d8f1);
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
         }
-        .poem-container, .blog-container {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-            margin: 10px;
-            max-width: 800px;
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin: 20px;
+            max-width: 900px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-in;
         }
         h1 {
             color: #5b3c88;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            font-size: 2em;
         }
         p {
             font-size: 1.2em;
-            color: #333;
-            line-height: 1.5;
+            color: #444;
+            line-height: 1.6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .divider {
+            width: 80px;
+            height: 4px;
+            background-color: #5b3c88;
+            margin: 20px auto;
+            border-radius: 2px;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,15 +72,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="poem-container">
+    <div class="container">
         <h1>प्रेरणा: एक काव्यात्मक यात्रा आत्मा और शांति की</h1>
+        <div class="divider"></div>
         <p>
             ओ मेरी मतवाली आँखो<br>
             इस मन को और मतवाला ना बनाओ
         </p>
     </div>
-    <div class="blog-container">
+
+    <div class="container">
         <h1>My Journey in Assam: Family, Inspiration, and Poetry</h1>
+        <div class="divider"></div>
         <p>
             Assam holds a special place in my heart, not just for its mesmerizing beauty but also because it is where my children were born. My time with my family in Assam was filled with love, laughter, and countless memorable moments. Every day, something around me inspired me to write. Whether it was the peaceful mornings, the gentle rustle of leaves, or the simple joy of watching my kids grow, Assam became the muse for my poetry.
         </p>
